@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Far cry 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="musica" loop>
+        <source src="Musica.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Personagens Far Cry 4</h1>
+    <script>
+        const musica = document.getElementById("musica");
+
+        function iniciarMusica() {
+            musica.play().catch(() => {
+                console.log("O navegador bloqueou o áudio automático.");
+            });
+        }
+
+        // Quando clicar na página
+        document.addEventListener("click", iniciarMusica);
+
+        // Quando voltar para a página
+        window.addEventListener("pageshow", iniciarMusica);
+    </script>
+    <div class="Personagens">
+        <div class="card">
+            <div class="card-imagem">
+                <img class="card-img" src="https://assetsio.gnwcdn.com/far_cry_4_hero.jpg?width=2048&height=2048&fit=bounds&quality=85&format=jpg&auto=webp">
+            </div>
+            <div class="card-corpo">
+                <h2>Ajay Ghale</h2>
+                <div class="card-texto">
+                    Protagonista do jogo. Viaja para Kyrat para cumprir o último desejo de sua mãe e acaba envolvido na guerra civil.
+                </div>
+                <div class="card-acao">
+                    <button onclick="window.location.href='https://www.google.com/search?q=Ajay+Ghale+Far+Cry+4'">
+                        Explorar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-imagem">
+                <img class="card-img" src="https://images.openai.com/static-rsc-4/2H_R1xKrryI7bJ6tK5zbQ6PTry-y8MIklDi1NeMacF4oKt3eIjLvYhZdxTAIlI6Sjt3_Zy3ck2coGHu7f5Nj6tB8HASZrHaJ635g9jFnHQ2R3f_cDutwd0rOvLWYRlbmIp874PWXQA6JX-oqsk0-YJfujt2PwFnIc8UIR2XjCdLzoRZdBOZxLE6aWz5kz4TE?purpose=fullsize">
+            </div>
+            <div class="card-corpo">
+                <h2>Pagan Min</h2>
+                <div class="card-texto">
+                    Principal antagonista e autoproclamado rei de Kyrat. É excêntrico, carismático e extremamente violento.
+                </div>
+                <div class="card-acao">
+                    <button onclick="window.location.href='https://www.google.com/search?q=Pagan+Min+Far+Cry+4'">
+                        Explorar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-imagem">
+                <img class="card-img" src="https://images.openai.com/static-rsc-4/d_4OUJDxi0tcg_82kot0tisNOWjFaK3k_U--iJzrTFYm9r0DzQXXtd1-bO5Wwn6jSzxg3yJoS4aawUSFupm_2DUQxyPTsS9FhXgy5T7YfMYBtp8s9tJ7fDJ4O8akraawWl7AlUfPx4SQZ9A9tcmiZpQh9FD1dU0MCocPvQYUNHXdEoBbYZlh6jJjLEOV-35K?purpose=fullsize">
+            </div>
+            <div class="card-corpo">
+                <h2>Sabal</h2>
+                <div class="card-texto">
+                    Um dos líderes do Caminho Dourado (Golden Path). É mais tradicionalista e religioso.
+                </div>
+                <div class="card-acao">
+                    <button onclick="window.location.href='https://www.google.com/search?q=Sabal+Far+Cry+4'">
+                        Explorar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
